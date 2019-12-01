@@ -1,2 +1,2 @@
-# arPeopleHighlight
-An app to highlight people who appear in front of the camera using ARKit
+# Highlight people using ARKit
+An app that uses ARKit to highlight people who appear in front of the camera
