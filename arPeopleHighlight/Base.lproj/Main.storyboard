@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="AR_People_Highlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pHl-ar-fna" userLabel="AR View" customClass="ARView" customModule="RealityKit">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pgz-16-Dp8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qrT-1h-Ll9" firstAttribute="trailing" secondItem="Pgz-16-Dp8" secondAttribute="trailing" id="HOj-CI-ljh"/>
+                            <constraint firstItem="Pgz-16-Dp8" firstAttribute="leading" secondItem="qrT-1h-Ll9" secondAttribute="leading" id="HyU-ck-QHl"/>
+                            <constraint firstItem="Pgz-16-Dp8" firstAttribute="top" secondItem="pHl-ar-fna" secondAttribute="top" id="Nht-md-3BI"/>
+                            <constraint firstAttribute="bottom" secondItem="Pgz-16-Dp8" secondAttribute="bottom" id="mrU-jB-RfB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qrT-1h-Ll9"/>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="pHl-ar-fna" id="53M-v7-0Y8"/>
+                        <outlet property="segmentationImageView" destination="Pgz-16-Dp8" id="bBh-WG-Fem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="134"/>
+        </scene>
+    </scenes>
+</document>
